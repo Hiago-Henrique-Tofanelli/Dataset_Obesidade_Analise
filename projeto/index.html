@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráficos de Obesidade por Estado</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+        .waffle-row {
+            display: flex;
+            margin: 5px 0;
+        }
+
+        .waffle-square {
+            width: 20px;
+            height: 20px;
+            margin-right: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Gráfico de barras com todos os estados -->
+    <div id="bar-chart-all"></div>
+
+    <!-- Gráfico de barras com os cinco estados com maior obesidade -->
+    <div id="bar-chart-top"></div>
+
+    <!-- Gráfico de barras com os cinco estados com menor obesidade -->
+    <div id="bar-chart-bottom"></div>
+
+    <!-- Gráfico de pizza com todos os estados -->
+    <div id="pie-chart-all"></div>
+
+    <style>
+        .waffle-row {
+            display: flex;
+            margin: 5px 0;
+        }
+
+        .waffle-square {
+            width: 20px;
+            height: 20px;
+            margin-right: 2px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+
+    <table>
+        <caption>Gráfico de Waffle</caption>
+        <tr>
+            <th>Legenda</th>
+            <th>Gráfico de Waffle</th>
+        </tr>
+        <tr>
+            <td>Diferença de 10% (Azul: Positiva, Vermelha: Negativa)</td>
+            <td id="waffle-chart"></td>
+        </tr>
+    </table>
+
+    <!-- Gráfico de waffle horizontal para a diferença de Maior - Menor -->
+    <div id="waffle-chart"></div>
+
+    <!-- Gráfico de waffle horizontal para a diferença de Menor - Maior -->
+    <div id="waffle-chart-2"></div>
+
+    <!-- Adicione quantas divs desejar para representar os gráficos de waffle para diferentes estados -->
+    <script src="script.js"></script>
+</body>
+
+</html>
